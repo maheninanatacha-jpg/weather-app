@@ -1,0 +1,6 @@
+.priority-haute   { border-left: 5px solid crimson; }
+.priority-moyenne { border-left: 5px solid orange; }
+.priority-basse   { border-left: 5px solid seagreen; }
+
+.hidden { display: none; }
+.todo-header { cursor: pointer; }
