@@ -5,5 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>weather App</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="controls">
+      <form id="search-form">
+        <input
+          type="text"
+          id="location"
+          placeholder="Ville ou pays"
+          aria-label="Lieu à rechercher"
+          required
+        />
+        <button type="submit">Rechercher</button>
+      </form>
+      <button id="unit-toggle" type="button">Afficher en °F</button>
+    </div>
+    <p id="error" role="alert"></p>
+    <div id="weather"></div>
+  </body>
 </html>

@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #e8eef3; /* style par défaut */
+  transition: background 0.5s;
+}
+
+.weather-rain {
+  background: #5c6b7a;
+  color: white;
+}
+.weather-clear-day {
+  background: #87ceeb;
+}
+.weather-partly-cloudy-day {
+  background: #b8d4e8;
+}
+
+.weather-card {
+  max-width: 320px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.weather-icon {
+  width: 96px;
+  height: 96px;
+}
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2rem auto 1rem;
+  padding: 0 1rem;
+}
+
+#search-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input,
+button {
+  font: inherit; /* reprend la police de la page */
+  border-radius: 10px;
+}
+
+input {
+  padding: 0.6rem 0.9rem;
+  min-width: 14rem;
+  border: 2px solid #c5d0db;
+  background: white;
+  color: #1c2733; /* lisible même sur un fond sombre (pluie) */
+}
+
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+button {
+  padding: 0.6rem 1.1rem;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+}
+
+button:hover {
+  background: #2563eb;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
+
+#unit-toggle {
+  background: rgba(255, 255, 255, 0.35);
+  color: inherit;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+#unit-toggle:hover {
+  background: rgba(255, 255, 255, 0.55);
+}
+
+#error {
+  min-height: 1.5rem; /* évite que la page saute à l'apparition du message */
+  text-align: center;
+  color: #b42318;
+  font-weight: 600;
+}
