@@ -89,6 +89,4 @@ The app uses the Visual Crossing Timeline API. If your usage requires an API key
 
 Built as part of [The Odin Project](https://www.theodinproject.com/) JavaScript curriculum.
 
-## Author
 
-**YOUR NAME** · [GitHub](https://github.com/YOUR-USERNAME) · [LinkedIn](https://www.linkedin.com/in/YOUR-PROFILE/)
